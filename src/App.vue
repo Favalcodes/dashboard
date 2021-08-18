@@ -1,28 +1,54 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-row>
+      <b-col col md="1">
+        <Navbar />
+      </b-col>
+      <b-col class="righty">
+        <b-row>
+          <Top />
+        </b-row>
+        <b-row>
+          <b-col col md="8">
+            <Left />
+          </b-col>
+          <b-col>
+            <Right />
+          </b-col>
+        </b-row>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import Top from './components/Top.vue'
+import Left from './components/Left.vue'
+import Right from './components/Right.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    Top,
+    Right,
+    Left
   }
 }
 </script>
 
 <style>
 #app {
+  overflow-x: hidden;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: #010C25;
+  height: 100vh;
+  padding-right: 20px;
+}
+.righty{
+  margin-left:
 }
 </style>
