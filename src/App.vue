@@ -39,9 +39,13 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Proxima";
+  src: url("./font/proxima.otf");
+}
 #app {
   overflow-x: hidden;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Proxima", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #010C25;

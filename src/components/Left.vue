@@ -1,7 +1,7 @@
 <template>
   <div id="left">
         <div class="overview">
-          <h4 class="d-flex">Welcome Home, <strong>Hanna</strong><Icons name="sun" /></h4>
+          <h4 class="d-flex">Welcome Home, <span style="font-weight: 700">Hanna</span><Icons name="sun" /></h4>
           <p>Hope you had a great day at work today</p>
           <div class="down d-flex justify-content-between mt-4">
             <div class="temperature d-flex">
@@ -148,7 +148,7 @@ export default {
     data() {
       return {
         swiperOption: {
-          slidesPerView: 4,
+          slidesPerView: 3.1,
           spaceBetween: 50,
           pagination: {
             el: '.swiper-pagination',
