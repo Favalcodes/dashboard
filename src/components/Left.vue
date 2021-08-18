@@ -26,7 +26,7 @@
             <div class="box">
               <div class="label d-flex">
                 <h6>Power Consumption</h6>
-                <span>Today <font-awesome-icon icon="caret-down"/></span>
+                <span style="color: #90A0C2; font-weight: 100">Today <font-awesome-icon icon="caret-down"/></span>
               </div>
               <MyChart :height ="200" class="chart"/>
             </div>

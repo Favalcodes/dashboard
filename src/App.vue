@@ -48,7 +48,4 @@ export default {
   height: 100vh;
   padding-right: 20px;
 }
-.righty{
-  margin-left:
-}
 </style>
