@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <b-row>
+    <div class="desktop">
+      <b-row>
       <b-col col md="1">
         <Navbar />
       </b-col>
@@ -18,6 +19,11 @@
         </b-row>
       </b-col>
     </b-row>
+    </div>
+    <div class="mobile">
+      <img src="./assets/oops.png" class="oops" alt="">
+      <h3>Seems like you are using a MOBILE device, please change to a DESKTOP.</h3>
+    </div>
   </div>
 </template>
 
@@ -52,4 +58,33 @@ export default {
   height: 100vh;
   padding-right: 20px;
 }
+.mobile{
+  display: none;
+}
+@media (max-width: 800px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 8%;
+}
+.oops{
+  position: relative;
+  width: 70%;
+  height: 40%; 
+}
+.mobile h3{
+  position: relative;
+  font-weight: 800px;
+  color: #fff;
+  text-align: center;
+}
+}
+
 </style>
